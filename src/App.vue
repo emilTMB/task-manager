@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Главная</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -28,5 +27,48 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  margin-left: 10px;
+}
+
+li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.container {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #2c3e50;
+  border-radius: 15px;
+  padding: 15px;
+}
+button{
+  margin-bottom: 15px;
+  width: 100px;
+}
+.task {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.next {
+  width: 200px;
+  height: 50px;
+  background-color: #42b983;
+  cursor: pointer;
+}
+.main {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #2c3e50;
+  border-radius: 15px;
+  padding: 15px;
 }
 </style>
