@@ -28,6 +28,7 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 a {
   text-decoration: none;
 }
@@ -49,15 +50,17 @@ li {
   border-radius: 15px;
   padding: 15px;
 }
-button{
+
+button {
   margin-bottom: 15px;
   width: 100px;
 }
+
 .task {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
+
 .next {
   width: 200px;
   height: 50px;
@@ -70,5 +73,27 @@ button{
   border: 1px solid #2c3e50;
   border-radius: 15px;
   padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 300px;
+  }
+
+  .task {
+    display: block;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    padding: 0;
+  }
 }
 </style>
